@@ -45,8 +45,10 @@ public class JobSeekerController {
 		ModelAndView model=null;
 		JobSeeker jobseeker=jobSeekerService.checkJobSeeker(theJobSeeker);
 		if(jobseeker==null) {
+			System.out.println("jobseeker "+jobseeker);
 			model=new ModelAndView("login-jobseeker");
-			model.addObject("error","Invalid User Name Password");
+			model.addObject("error","Invalid User Name Or Password");
+			model.addObject("jobseeker", new JobSeeker());
 		}
 		else {
 			model=new ModelAndView("welcome");

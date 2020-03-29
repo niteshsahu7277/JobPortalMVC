@@ -6,7 +6,7 @@
     
     
     <!--# Register START #-->
-
+	
     <div class="limiter">
         <div class="container-login100">
             <div class="wrap-login100">
@@ -15,6 +15,7 @@
                 </div>
 					<form:form action="loginJobSeeker" cssClass="login100-form validate-form" modelAttribute="jobseeker">
 					<span class="login100-form-title">
+                        <div style="color: red">${error}</div>
                         Member Login
                         </span>
                       <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
@@ -40,7 +41,7 @@
             </div>
         </div>
     </div>
- <div style="color: red">${error}</div>
+ 
 
     <!--# Register END #-->
 <%@include file="footer.jsp" %>

@@ -17,6 +17,9 @@ import com.niit.recruiter.jobportalmvc.service.JobSeekerService;
 @Controller
 @RequestMapping("/jobseeker") 
 public class JobSeekerController {
+	
+	
+	
 	@Autowired
 	private JobSeekerService jobSeekerService;
 	@RequestMapping(value="/showRegisterForm")    //@RequestMapping using in the method level ,it has default GET method

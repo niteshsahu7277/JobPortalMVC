@@ -44,14 +44,11 @@ public class JobSeekerImpl implements JobSeekerDAO {
 			
 			Query query=session.createQuery(cq);
 			query.setMaxResults(1);
-			jobSeeker=(JobSeeker)query.getSingleResult();
-			
-			
+			jobSeeker=(JobSeeker)query.getSingleResult();	
 		}
 		catch(Exception e) {
-			e.printStackTrace();
+			System.out.println("Error: "+e.getMessage());
 		}
-		
 		return jobSeeker;
 		
 	}

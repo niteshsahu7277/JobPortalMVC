@@ -3,7 +3,7 @@
     
 <%@ include file="header.jsp"  %>
 
-<h1>Welocome</h1>
+<h1>Successfully Registered</h1>
 
 <a href="showLoginForm">Login</a>
 

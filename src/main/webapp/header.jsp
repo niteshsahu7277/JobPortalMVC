@@ -33,12 +33,12 @@ pageEncoding="ISO-8859-1"%>
         <!--===============================================================================================-->
     </head>
 
-<body>
+<body background="<c:url value="/resources/images/officebg.jpg"/>"/>
     <header class="sticky-top">
         <!--- Navbar --->
         <nav class="navbar navbar-expand-lg">
             <div class="container">
-                <a class="navbar-brand text-white" href="#"><i class="fa fa-graduation-cap fa-lg mr-2"></i>JobBazar</a>
+                <a class="navbar-brand text-white" href="index.jsp"><i class="fa fa-graduation-cap fa-lg mr-2"></i>JobBazar</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nvbCollapse"
                     aria-controls="nvbCollapse">
                     <span class="navbar-toggler-icon"></span>

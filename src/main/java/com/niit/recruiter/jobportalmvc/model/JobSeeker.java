@@ -44,6 +44,4 @@ public class JobSeeker {
 		this.password = password;
 	}
 	
-	
-
 }

@@ -24,7 +24,13 @@ CREATE TABLE IF NOT EXISTS `applied_job` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 
--- Data exporting was unselected.
+-- Dumping data for table jobbazart.applied_job: ~2 rows (approximately)
+/*!40000 ALTER TABLE `applied_job` DISABLE KEYS */;
+INSERT INTO `applied_job` (`id`, `jobseeker_id`, `job_id`) VALUES
+	(1, 4, 1),
+	(2, 4, 3),
+	(3, 4, 4);
+/*!40000 ALTER TABLE `applied_job` ENABLE KEYS */;
 
 -- Dumping structure for table jobbazart.job
 CREATE TABLE IF NOT EXISTS `job` (
@@ -41,7 +47,14 @@ CREATE TABLE IF NOT EXISTS `job` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 
--- Data exporting was unselected.
+-- Dumping data for table jobbazart.job: ~4 rows (approximately)
+/*!40000 ALTER TABLE `job` DISABLE KEYS */;
+INSERT INTO `job` (`id`, `employer_email`, `logo`, `name`, `salary`, `vacancy`, `type`, `description`, `advertise_date`, `expire_date`) VALUES
+	(1, 'NIIT', 'niit-icone.png', 'Java Developer', '35000', '15', 'IT', 'DevOps', '2020-03-31', '2020-04-22'),
+	(2, 'GOOGLE', 'google-icon.png', 'Dot NET Developer', '25000', '25', 'IT', 'Full Stack Developer', '2020-03-31', '2020-04-18'),
+	(3, 'AMAZON', 'amazon-icone.png', 'Django Developer', '45000', '35', 'IT', 'Web Developer', '2020-03-31', '2020-04-30'),
+	(4, 'LinkedIn', 'linkedin-icone.png', 'Data Base Manager', '45000', '15', 'IT', 'Sql,MySql', '2020-03-31', '2020-04-15');
+/*!40000 ALTER TABLE `job` ENABLE KEYS */;
 
 -- Dumping structure for table jobbazart.jobseeker
 CREATE TABLE IF NOT EXISTS `jobseeker` (
@@ -54,7 +67,14 @@ CREATE TABLE IF NOT EXISTS `jobseeker` (
   CONSTRAINT `FK_jobseeker_users` FOREIGN KEY (`users_id`) REFERENCES `users` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
 
--- Data exporting was unselected.
+-- Dumping data for table jobbazart.jobseeker: ~3 rows (approximately)
+/*!40000 ALTER TABLE `jobseeker` DISABLE KEYS */;
+INSERT INTO `jobseeker` (`id`, `first_name`, `last_name`, `users_id`) VALUES
+	(2, 'NITESH', 'KUMAR', 4),
+	(3, 'shubham', 'dubey', 6),
+	(4, 'Deepanshu', 'Gupta', 7),
+	(5, 'Jatin', 'Puri', 8);
+/*!40000 ALTER TABLE `jobseeker` ENABLE KEYS */;
 
 -- Dumping structure for table jobbazart.users
 CREATE TABLE IF NOT EXISTS `users` (
@@ -65,7 +85,14 @@ CREATE TABLE IF NOT EXISTS `users` (
   UNIQUE KEY `email` (`email`)
 ) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
 
--- Data exporting was unselected.
+-- Dumping data for table jobbazart.users: ~3 rows (approximately)
+/*!40000 ALTER TABLE `users` DISABLE KEYS */;
+INSERT INTO `users` (`id`, `email`, `password`) VALUES
+	(4, 'nitesh123@gmail.com', 'redhat'),
+	(6, 'shubham123@gmail.com', 'redhat'),
+	(7, 'deep123@gmail.com', 'redhat'),
+	(8, 'jatin123@gmail.com', 'redhat');
+/*!40000 ALTER TABLE `users` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;

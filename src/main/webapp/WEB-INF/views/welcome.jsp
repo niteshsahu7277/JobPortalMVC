@@ -26,12 +26,12 @@
 							</c:url>
             <div class="detail">
                 <div class="media display-inline text-align-center">
-                    <img class="mr-3 " src="<c:url value="/resources/images/${tempjoblist.logo}"/>">
+                    <img class="mr-3 " height="100" width="100" src="<c:url value="/resources/images/${tempjoblist.logo}"/>">
                     <div class="media-body text-left  text-align-center">
-                        <h6> <a href="#" class="font-color-black">${tempjoblist.employerEmail}  looking for ${tempjoblist.name} </a></h6>
-                        <i class="large material-icons">${tempjoblist.type}:</i>
+                        <h6 class="large material-icon"> ${tempjoblist.employerEmail}  looking for ${tempjoblist.name} </h6>
+                        <i class="font-color-black">${tempjoblist.type}:</i>
                         <span class="text">${tempjoblist.description}</span>
-                        <br />
+                       <br />
                         <i class="large material-icons">place</i>
                         <span class="text font-size">${tempjoblist.vacancy} Available Vacancy</span>
                         <div class="float-right margin-top text-align-center">

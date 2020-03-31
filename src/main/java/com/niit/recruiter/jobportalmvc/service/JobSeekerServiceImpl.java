@@ -20,18 +20,16 @@ public class JobSeekerServiceImpl implements JobSeekerService {
 		jobSeekerDAO.saveJobSeeker(theJobSeeker);
 	}
 
-	@Override
-	public JobSeeker getJObSeeker(String email, String password) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-	
-	@Override
-	@Transactional
-	public JobSeeker checkJobSeeker(JobSeeker theJobSeeker) {
-		
-		return jobSeekerDAO.checkJobSeeker(theJobSeeker);
-		
-	}
-
+	/*
+	 * @Override public JobSeeker getJObSeeker(String email, String password) { //
+	 * TODO Auto-generated method stub return null; }
+	 * 
+	 * @Override
+	 * 
+	 * @Transactional public JobSeeker checkJobSeeker(JobSeeker theJobSeeker) {
+	 * 
+	 * return jobSeekerDAO.checkJobSeeker(theJobSeeker);
+	 * 
+	 * }
+	 */
 }

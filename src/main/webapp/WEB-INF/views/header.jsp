@@ -30,6 +30,13 @@ pageEncoding="ISO-8859-1"%>
         <link rel="stylesheet"  href="<c:url value="/resources/css/util.css"/>">
         <link rel="stylesheet" href="<c:url value="/resources/css/main.css"/>">
         <link rel="stylesheet" href="<c:url value="/resources/css/style.css"/>">
+        
+        <link rel="stylesheet" type="text/css" href="<c:url value="/resources/css/main.css"/>">
+    	<link rel="stylesheet" type="text/css" href="<c:url value="/resources/css/matrialize.css"/>">
+    	<link rel="stylesheet" href="<c:url value="/resources/css/navstyle.css"/>">
+    	<link rel="stylesheet" href=""<c:url value="/resources/css/jobliststyle.css"/>">
+
+        
         <!--===============================================================================================-->
     </head>
 

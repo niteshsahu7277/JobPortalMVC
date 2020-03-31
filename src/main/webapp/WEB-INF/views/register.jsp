@@ -16,40 +16,61 @@
 					<form:form action="saveJobSeeker" cssClass="login100-form validate-form" modelAttribute="jobseeker">
 					<span class="login100-form-title">
                         Member Registration
-                        </span>
-                    <div class="wrap-input100 validate-input" data-validate="First Name is required">
-                    <form:input path="firstName" placeholder="First Name" cssClass="input100"/>
-                    <span class="focus-input100"></span>
+                    </span>
+
+                    <div class="wrap-input100 validate-input" data-validate="Name is required">
+                        <input class="input100" type="text" name="firstName" placeholder="First Name">
+                        <span class="focus-input100"></span>
                         <span class="symbol-input100">
                             <i class="fa fa-user" aria-hidden="true"></i>
                         </span>
                     </div>
-                      <div class="wrap-input100 validate-input" data-validate="Last Name is required">
-                    <form:input path="lastName" placeholder="Last Name" cssClass="input100"/>
-                    <span class="focus-input100"></span>
+
+                    <div class="wrap-input100 validate-input" data-validate="Name is required">
+                        <input class="input100" type="text" name="lastName" placeholder="Last Name">
+                        <span class="focus-input100"></span>
                         <span class="symbol-input100">
                             <i class="fa fa-user" aria-hidden="true"></i>
                         </span>
                     </div>
-                      <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
-                    <form:input path="email" placeholder="Email" cssClass="input100"/>
-                    <span class="focus-input100"></span>
+
+                    <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+                        <input class="input100" type="text" name="email" placeholder="Email">
+                        <span class="focus-input100"></span>
                         <span class="symbol-input100">
                             <i class="fa fa-envelope" aria-hidden="true"></i>
                         </span>
                     </div>
-                      <div class="wrap-input100 validate-input" data-validate="Password is required">
-                    <form:password path="password" placeholder="Password" cssClass="input100"/>
-                    <span class="focus-input100"></span>
+
+                    <div class="wrap-input100 validate-input" data-validate="Password is required">
+                        <input class="input100" type="password" name="password" placeholder="Password">
+                        <span class="focus-input100"></span>
                         <span class="symbol-input100">
                             <i class="fa fa-lock" aria-hidden="true"></i>
                         </span>
                     </div>
-                    
-                     <div class="container-login100-form-btn">
-                     <form:button cssClass="login100-form-btn">Submit</form:button>
-                     </div>
-					
+
+                    <div class="container-login100-form-btn">
+                        <button class="login100-form-btn">
+                            Register
+                        </button>
+                    </div>
+
+                    <div class="text-center p-t-12">
+                        <span class="txt1">
+                            Forgot
+                        </span>
+                        <a class="txt2" href="#">
+                            Password?
+                        </a>
+                    </div>
+
+                    <div class="text-center p-t-8">
+                        <a class="txt2" href="login.html">
+                            Go to Login
+                            <i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
+                        </a>
+                    </div>
 					</form:form>
             </div>
         </div>

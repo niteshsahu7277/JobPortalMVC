@@ -25,32 +25,23 @@ public class JobSeekerImpl implements JobSeekerDAO {
 
 	}
 
-	@Override
-	public JobSeeker getJobSeeker(String email,String password) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-	@Override
-	public JobSeeker checkJobSeeker(JobSeeker theJobSeeker) {
-		JobSeeker jobSeeker=null;
-		Session session=null;
-		try {
-			session=sessionFactory.getCurrentSession();
-			CriteriaBuilder cb=session.getCriteriaBuilder();
-			CriteriaQuery<JobSeeker> cq=cb.createQuery(JobSeeker.class);
-			Root<JobSeeker> root=cq.from(JobSeeker.class);
-			cq.select(root).where(cb.equal(root.get("email"),theJobSeeker.getEmail()),
-					cb.equal(root.get("password"),theJobSeeker.getPassword()));
-			
-			Query query=session.createQuery(cq);
-			query.setMaxResults(1);
-			jobSeeker=(JobSeeker)query.getSingleResult();	
-		}
-		catch(Exception e) {
-			System.out.println("Error: "+e.getMessage());
-		}
-		return jobSeeker;
-		
-	}
-
-}
+	/*
+	 * @Override public JobSeeker getJobSeeker(String email,String password) { //
+	 * TODO Auto-generated method stub return null; }
+	 * 
+	 * @Override public JobSeeker checkJobSeeker(JobSeeker theJobSeeker) { JobSeeker
+	 * jobSeeker=null; Session session=null; try {
+	 * session=sessionFactory.getCurrentSession(); CriteriaBuilder
+	 * cb=session.getCriteriaBuilder(); CriteriaQuery<JobSeeker>
+	 * cq=cb.createQuery(JobSeeker.class); Root<JobSeeker>
+	 * root=cq.from(JobSeeker.class);
+	 * cq.select(root).where(cb.equal(root.get("email"),theJobSeeker.getEmail()),
+	 * cb.equal(root.get("password"),theJobSeeker.getPassword()));
+	 * 
+	 * Query query=session.createQuery(cq); query.setMaxResults(1);
+	 * jobSeeker=(JobSeeker)query.getSingleResult(); } catch(Exception e) {
+	 * System.out.println("Error: "+e.getMessage()); } return jobSeeker;
+	 * 
+	 * }
+	 * 
+	 */}
